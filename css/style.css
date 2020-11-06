@@ -1,0 +1,318 @@
+@import url(./bootstrap.min.css);
+@import url(./font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto:wght@500;700&display=swap');
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+a{
+    color: inherit;
+}
+img {
+    max-width: 100%;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.font-700{
+    font-weight: 700 !important;
+}
+.font-500{
+    font-weight: 500 !important;
+}
+
+/* COmmon Things */
+.xPadding {
+    padding-left: 0;
+    padding-right: 0;
+}
+.cmnOverlay {
+    background: rgba(36,36,36,0.94);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.cmnOverlay.redish{
+    background: rgba( 225,62,32 , 0.90);
+}
+a.readMore {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+a.readMore span {
+    margin-left: 5px;
+}
+.btn-more {
+    background: #e13e20;
+    color: #fff;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: 0.3s ease-in-out all;
+}
+
+.btn-more:hover {
+    border: 2px solid #e13e20;
+    color: #e13e20;
+    background: transparent;
+}
+.cHeading p {
+    font-size: 1.3rem;
+    color: rgba(40,40,40,0.76);
+    margin-bottom: 8px;
+}
+.cHeading h2 {
+    color: #131313;
+    font-size: 1.7rem;
+}
+/* OWL NAV And DOTS */
+.owl-nav button {
+    border: 1px solid #ccc;
+    padding: 0 10px 2px;
+}
+
+.owl-nav button span {
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1;
+}
+
+.owl-nav button:focus,.owl-nav button:hover {
+    color: #ffffff !important;
+    background-color: rgb(244 50 14 / 0.6) !important;
+    border: 1px solid #fff !important;
+}
+.owl-dots button.owl-dot {
+    border: 1px solid #fff;
+    height: 14px;
+    width: 14px;
+    border-radius: 100%;
+    padding: 0;
+    margin: 0 4px;
+    background: transparent;
+}
+.owl-dots button.owl-dot.active {
+    background: #e13e20;
+}
+
+/* Features */
+.medicalFeatures .box {
+    position: relative;
+    padding: 50px 40px;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+}
+.medicalFeatures .box.box1{
+    background-image: url(../images/features1.jpg);
+}
+.medicalFeatures .box.box2{
+    background-image: url(../images/features2.jpg);
+}
+.medicalFeatures .box.box3{
+    background-image: url(../images/features3.jpg);
+}
+.medicalFeatures .fIcon {
+    width: 40%;
+    font-size: 2.3rem;
+    color: #fff;
+    padding-right: 20px;
+    position: relative;
+}
+.medicalFeatures .fContent {
+    color: #fff;
+    position: relative;
+}
+.medicalFeatures .fContent h2 {
+    font-size: 1.2rem;
+
+}
+.medicalFeatures .fContent p {
+    font-size: 0.9rem;
+}
+
+/* aboutHealth*/
+.aboutHealth {
+    padding-top: 100px;
+    padding-bottom: 70px;
+
+}
+.aboutHealthContent h2 {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+}
+
+.aboutHealthContent h4 {
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+}
+.aboutSlider{
+    position: relative;
+}
+.aboutSlider .owl-nav{
+    position: absolute;
+    top: 47%;
+    width: 100%;
+}
+.aboutSlider .owl-nav .owl-prev {
+    left: -10%;
+    position: absolute;
+}
+.aboutSlider .owl-nav .owl-next {
+    right: -10%;
+    position: absolute;
+}
+.aboutSlider .owl-nav button {
+    background: rgb(62 62 62 / 0.62);
+    color: #e4e4e4;
+    transition: 0.3s ease-in-out all;
+    opacity: 0;
+}
+.aboutSlider:hover .owl-nav button {
+    opacity: 1;
+}
+.aboutSlider:hover .owl-nav .owl-next {
+    right: 0;
+    position: absolute;
+}
+.aboutSlider:hover .owl-nav .owl-prev {
+    left: 0;
+}
+.aboutSlider .owl-dots {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+
+/* Feature Health */
+.fetureHealth {
+    background: linear-gradient(180deg, #f7f7f7, transparent);
+    padding: 70px 0;
+}
+.cHeading {
+    /* margin-bottom: 50px; */
+    position: relative;
+    padding-bottom: 70px;
+}
+.heading-seperator{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    height: 12px;
+    width: 3px;
+    background: #dbdbdb;
+    bottom: 48px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.heading-seperator:before {
+    height: 1px;
+    width: 40px;
+    background: #dbdbdb;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    content: "";
+    margin-right: 6px;
+}
+.heading-seperator:after {
+    height: 1px;
+    width: 40px;
+    background: #dbdbdb;
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    content: "";
+    margin-left: 6px;
+}
+.boxImage {
+    position: relative;
+    border: 1px solid #fff;
+    height: 234px;
+    transition: 0.3s ease-in-out all;
+}
+.boxImage figure{
+    /* position: relative; */
+    margin-bottom: 0;
+}
+.boxImage figure img {
+    margin-bottom: 0;
+    padding: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.boxImage .fhContent {
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.boxImage .fhOverlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: rgba(0,0,0,0.66);
+    margin: auto;
+    z-index: 1;
+    opacity: 0;
+}
+.boxImage .fhContent {
+    opacity: 0;
+}
+.boxImage .fhContent p {
+    color: #ccc;
+    margin-bottom: 5px;
+}
+.boxImage .fhContent h2 {
+    font-size: 1.1rem;
+}
+.boxImage .fhContent h2 a:hover {
+    color: #e13e20;
+    text-decoration: none;
+}
+.boxImage .fhContent .fhIcon {
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+    font-size: 12px;
+    opacity: 0;
+    transition: 0.3s ease-in-out all;
+}
+.boxImage:hover .fhOverlay{
+    opacity: 1;
+}
+.boxImage:hover .fhContent{
+    opacity: 1;
+}
+.boxImage:hover .fhContent .fhIcon{
+    opacity: 1;
+    transform: scale(1.1);
+}

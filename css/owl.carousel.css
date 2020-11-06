@@ -6,7 +6,7 @@
 /*
  *  Owl Carousel - Core
  */
-.owl-carousel {
+ .owl-carousel {
   display: none;
   width: 100%;
   -webkit-tap-highlight-color: transparent;
@@ -64,11 +64,12 @@
   .owl-carousel .owl-nav button.owl-prev,
   .owl-carousel .owl-nav button.owl-next,
   .owl-carousel button.owl-dot {
-    background: none;
-    color: inherit;
-    border: none;
-    padding: 0 !important;
-    font: inherit; }
+    /* background: none; */
+    /* color: inherit; */
+    /* border: none; */
+    /* padding: 0 !important; */
+    /* font: inherit; */
+    }
   .owl-carousel.owl-loaded {
     display: block; }
   .owl-carousel.owl-loading {
