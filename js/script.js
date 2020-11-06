@@ -41,10 +41,11 @@ $('.blogSlider').owlCarousel({
 //Team Slider
 $('.teamSlider').owlCarousel({
     loop:true,
-    margin:30,
+    margin:20,
     responsiveClass: true,
     nav: true,
     autoplay: true,
+    dots: false,
     responsive:{
         0:{
             items:1,

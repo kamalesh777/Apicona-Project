@@ -52,6 +52,10 @@ h1,h2,h3,h4,h5,h6 {
 .cHeading.cmn {
     padding-bottom: 30px;
 }
+.cHeading.white h2,
+.cHeading.white p{
+    color: #fff;
+}
 a.readMore {
     color: #fff;
     text-transform: uppercase;
@@ -70,6 +74,7 @@ a.readMore span {
     text-transform: uppercase;
     font-weight: 500;
     transition: 0.3s ease-in-out all;
+    border: 2px solid transparent;
 }
 
 .btn-more:hover {
@@ -91,7 +96,9 @@ a.readMore span {
     border: 1px solid #ccc;
     padding: 0 10px 2px;
 }
-
+.owl-nav button+button {
+    margin-left: 8px;
+}
 .owl-nav button span {
     font-size: 1.8rem;
     font-weight: 500;
@@ -103,6 +110,7 @@ a.readMore span {
     color: #ffffff !important;
     background-color: rgb(244 50 14 / 0.6) !important;
     border: 1px solid #fff !important;
+    outline: 0;
 }
 .owl-dots button.owl-dot {
     border: 1px solid #fff;
@@ -323,12 +331,46 @@ a.readMore span {
     opacity: 1;
     transform: scale(1.1);
 }
+/*Healt Stats*/
+
+.healthStats {
+    background: url(../images/healthStats.jpg);
+    padding: 100px 0;
+}
+.statContent svg {
+    position: relative;
+}
+.statContent svg~i {
+    position: absolute;
+    top: 21%;
+    font-size: 2.5rem;
+    text-align: center;
+    left: 43%;
+}
+
+.statContent {
+    color: #fff;
+    text-align: center;
+}
+.statContent p {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.statContent p+p {
+    font-size: 1rem;
+}
 /* Blog */
 
 .blog {
     background: #f7f7f7;
     padding: 80px 0 60px;
 }
+.blogImage{
+    position: relative;
+}
+
 .blogSlider {
     position: relative;
 }
@@ -428,8 +470,257 @@ a.readMore span {
     font-weight: 500;
     transition: 0.3s ease-in-out all;
 }
+.btn-more-border:hover{
+    border: 1px solid transparent;
+    background: #fff;
+    color: #333;
+}
 
 /*Team */
 .team {
     padding: 80px 0 70px;
+}
+.teamSocial {
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    background: #e13e20;
+    position: absolute;
+    transform: translateY(40px);
+    width: 100%;
+    transition: 0.3s ease-in-out all;
+    z-index: 5;
+}
+.teamSocial a {
+    padding: 0 10px;
+    color: #ffffff;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    background: transparent;
+    line-height: 30px;
+    margin: 0 5px;
+    text-align: center;
+    transition: 0.3s ease-in-out all;
+}
+.teamSocial a i {
+    font-size: 12px;
+}
+.teamSocial a:hover {
+    background: #fff;
+    color: #e13e20;
+}
+.teamColumn .teamImage {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+.teamColumn .teamImage .teamOverlay, 
+.blogColumn .blogImage .blogOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000000c7;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s ease-in-out all;
+}
+.teamColumn:hover .teamSocial {
+    transform: translateY(-41px);
+}
+.teamContent h1 {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.teamContent h4 {
+    font-size: 12px;
+    color: #5b5b5b;
+    margin: 15px 0;
+    font-weight: normal;
+}
+.department {
+    font-size: 15px;
+    color: #e13e20;
+}
+.teamContent {
+    background: #f7f7f7;
+    padding: 20px;
+}
+.department a:not(:first-child):before {
+    margin-right: 6px;
+    content: '/';
+}
+.teamSlider .owl-nav {
+    position: absolute;
+    top: -117px;
+    right: 0;
+}
+.teamColumn .teamImage .teamOverlay a,
+.blogColumn .blogImage .blogOverlay a {
+    color: #ffffff;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background: #e13e20;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+}
+.teamColumn:hover {
+    border-bottom: 2px solid #e13e20;
+}
+.teamColumn:hover .teamOverlay,
+.blogColumn:hover .blogOverlay{
+    opacity: 1;
+}
+
+/* Help */
+.help {
+    /* padding: 60px 0; */
+}
+.apForm {
+    background: #f7f7f7;
+    padding: 60px 40px;
+}
+.schedule {
+    padding: 60px 40px;
+    background: url(../images/help2.jpg);
+    height: 100%;
+    position: relative;
+}
+.schedule:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(227 58 26 / 81%);
+    z-index: 0;
+ }
+.scheduleDay {
+    position: relative;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+.scheduleDay li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.scheduleDay li:not(:last-child) {
+    border-bottom: 1px solid #efefef3b;
+}
+.apsImage {
+    background-image: url(../images/help1.jpg);
+    height: 100%;
+    background-position: center;
+    margin-bottom: 0;
+}
+footer {
+    background: rgba(37,37,37,0.97);
+    padding: 70px 0 50px;
+}
+
+.connectBox {
+    box-shadow: 0px 0px 2px #ccc;
+    display: flex;
+}
+
+.connectIcon {
+    width: 25%;
+    border-right: 1px solid #bdbdbd57;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ef421b;
+    font-size: 2.4rem;
+}
+
+.connectContent {
+    padding: 15px;
+}
+.connectContent p {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.connectContent h2 {
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* Footer Bottom */
+.footerBottom {
+    margin-top: 50px;
+}
+
+.footerHeader {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+.footerLogo {
+    max-width: 70%;
+}
+.footerLogo~p {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.footerCol .menu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+.footerCol .menu li {
+    width: 50%;
+}
+.footerCol .menu.navar-menu li {
+    width: 100%;
+}
+.footerCol .menu.navar-menu li a:before {
+    content: '';
+    display: none;
+}
+.footerCol .menu li a {
+    color: #ccc;
+    padding: 8px 0px;
+    display: block;
+    font-size: 14px;
+}
+.footerCol .menu li a:before {
+    content: '\f105';
+    font-family: 'fontAwesome';
+    margin-right: 6px;
+}
+.footerCol .menu li a:hover {
+    text-decoration: underline;
+    color: #ff591f;
+}
+.socialBar {
+    color: #fff;
+    display: flex;
+}
+.socialBar a:not(:last-child) {margin-right: 5px;}
+.col4 p {
+    color: #ccc;
+}
+.socialBar a {
+    background: rgb(107 107 107 / 0.28);
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    display: block;
+    text-align: center;
+    line-height: 40px;
 }
