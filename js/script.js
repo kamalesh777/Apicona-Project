@@ -24,6 +24,7 @@ $('.blogSlider').owlCarousel({
     responsiveClass: true,
     nav: true,
     autoplay: true,
+    dots: 0,
     responsive:{
         0:{
             items:1,
