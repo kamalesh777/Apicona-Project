@@ -143,6 +143,9 @@ a.readMore span {
     font-size: 1.2rem;
     border-radius: 8px;
 }
+.bannerPart {
+    margin-bottom: 138px;
+}
 .bannerPart .owl-nav {
     top: 45%;
     position: absolute;
@@ -177,9 +180,9 @@ a.readMore span {
 }
 .bannerForm {
     position: absolute;
-    bottom: 54px;
+    bottom: -106px;
     z-index: 99;
-    background: rgb(225 62 32 / 90%);
+    background: rgb(225 62 32 / 83%);
     padding: 30px;
     width: 100%;
     box-shadow: 2px 3px 3px #b7b7b7;
@@ -237,10 +240,13 @@ a.readMore span {
 }
 
 /* Features */
+.medicalFeatures {
+    padding-bottom: 70px;
+}
 .medicalFeatures .box {
     position: relative;
     padding: 50px 40px;
-    display: flex;
+    /* display: flex; */
     background-position: center;
     background-size: cover;
 }
@@ -274,9 +280,8 @@ a.readMore span {
 
 /* aboutHealth*/
 .aboutHealth {
-    padding-top: 100px;
+    padding-top: 60px;
     padding-bottom: 70px;
-
 }
 .aboutHealthContent h2 {
     font-size: 1.7rem;
