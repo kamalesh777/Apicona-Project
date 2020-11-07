@@ -58,3 +58,30 @@ $('.teamSlider').owlCarousel({
         }
     }
 })
+//Banner Part
+$('.bannerSlider').owlCarousel({
+    loop:true,
+    responsiveClass: true,
+    nav: true,
+    autoplay: true,
+    dots: false,
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:1,
+        },
+        1000:{
+            items: 1,
+        }
+    }
+})
+
+//Banner Tab
+//open and close tab menu
+$('.nav-tabs-dropdown')
+    .on("click", "li:not('.active') a", function(event) {  $(this).closest('ul').removeClass("open");
+    })
+    .on("click", "li.active a", function(event) {        $(this).closest('ul').toggleClass("open");
+});
