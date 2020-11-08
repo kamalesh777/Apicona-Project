@@ -889,3 +889,55 @@ footer {
 
 
 /* ================ Responsive ===============*/
+@media (max-width: 767px) {
+    .col-md-11-5{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .bannerForm .tab-content{
+        padding-bottom: 50px;
+    }
+    .searchBtn{
+        height: auto;
+        bottom: -14px;
+        left: 1px;
+        top: auto;
+        right: 1px;
+    }
+    .searchBtn .btn-more {
+        height: auto;
+        width: 100%;
+    }
+    .bannerForm {
+        position: relative;
+        bottom: 0;
+    }
+    .sliderItem {
+        height: 440px;
+    }
+    .sliderItem .item img {
+        height: 100%;
+    }
+    .bannerPart {
+        margin-bottom: 0;
+    }
+    .aboutSlider {
+        overflow: hidden;
+        margin-top: 30px;
+    }
+    .medicalFeatures {
+        padding-top: 0px;
+    }
+    .aboutHealth, .fetureHealth, .medicalFeatures, .team, .appointment {
+        padding-bottom: 50px;
+    }
+    .statContent {
+        margin-top: 25px;
+    }
+    .patientCareText .conButton{
+        max-width: auto;
+        justify-content: center;
+    }
+}
