@@ -145,6 +145,37 @@ a.readMore span {
 }
 .bannerPart {
     margin-bottom: 138px;
+    position: relative;
+}
+.bannerSlider {
+    position: relative;
+}
+
+.bannerContent p {
+    /* text-transform: uppercase; */
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.sliderItem .item:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(180deg, transparent, #fff);
+    height: 100%;
+    left: 0;
+    z-index: 1;
+}
+.bannerContent {
+    text-align: center;
+    margin: auto;
+    margin-top: 30%;
+    position: relative;
+}
+.bannerContent h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000000;
 }
 .bannerPart .owl-nav {
     top: 45%;
@@ -171,6 +202,7 @@ a.readMore span {
     right: 0;
     bottom: 0;
     margin: auto;
+    z-index: -3;
 }
 .col-md-11-5 {
     -webkit-box-flex: 0;
@@ -189,7 +221,7 @@ a.readMore span {
     border-radius: 5px;
 }
 .bannerForm .nav-tabs {
-    border-bottom: 0;
+    border: 0;
 }
 .bannerForm .tab-content {
     background: #ffffff;
@@ -241,7 +273,8 @@ a.readMore span {
 
 /* Features */
 .medicalFeatures {
-    padding-bottom: 70px;
+    padding-top: 60px;
+    padding-bottom: 80px;
 }
 .medicalFeatures .box {
     position: relative;
@@ -335,7 +368,7 @@ a.readMore span {
 
 /* Feature Health */
 .fetureHealth {
-    background: linear-gradient(180deg, #f7f7f7, transparent);
+    background: #f7f7f7;
     padding: 70px 0;
 }
 .cHeading {
@@ -697,9 +730,7 @@ a.readMore span {
 }
 
 /* Help */
-.help {
-    /* padding: 60px 0; */
-}
+
 .apForm {
     background: #f7f7f7;
     padding: 60px 40px;
@@ -858,25 +889,3 @@ footer {
 
 
 /* ================ Responsive ===============*/
-@media (max-width: 767px) {
-    .col-md-11-5{
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-    .bannerForm .tab-content{
-        padding-bottom: 50px;
-    }
-    .searchBtn{
-        height: auto;
-        bottom: -14px;
-        left: 1px;
-        top: auto;
-        right: 1px;
-    }
-    .searchBtn .btn-more {
-        height: auto;
-        width: 100%;
-    }
-}
